@@ -438,6 +438,10 @@ augroup filetypedetect
   autocmd BufNewFile,BufRead
         \ .viminfo
         \ setfiletype viminfo
+  " Vue files
+  autocmd BufNewFile,BufRead
+        \ ?*.vue
+        \ setfiletype vue
   " .wgetrc files
   autocmd BufNewFile,BufRead
         \ .wgetrc
