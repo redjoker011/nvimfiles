@@ -241,3 +241,6 @@ set termencoding=utf-8
 
 " Clear Search Highlight
 nnoremap <Leader><space> :noh<Enter>
+
+" Disable Netrw since We already use ChadTree
+let loaded_netrwPlugin = 1
