@@ -28,6 +28,7 @@ let g:startify_lists = [
             \ '~/dotfiles',
             \ '~/go',
             \ '~/gopher',
+            \ '~/.config/nvim',
             \ '~/sample_docker_app'
             \ ]
 

@@ -56,7 +56,6 @@ Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'ryanoasis/vim-devicons'
-Plug 'suan/vim-instant-markdown'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
@@ -106,6 +105,7 @@ let g:coc_global_extensions = [
 
 Plug 'takac/vim-hardtime'
 Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 " Initialize plugin system
 call plug#end()
