@@ -108,6 +108,10 @@ augroup filetypedetect
   autocmd BufNewFile,BufRead
         \ ?*.css
         \ setfiletype css
+  " SCSS files
+  autocmd BufNewFile,BufRead
+        \ ?*.scss
+        \ setfiletype scss
   " CSV files
   autocmd BufNewFile,BufRead
         \ ?*.csv
