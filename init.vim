@@ -13,7 +13,9 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Automatically install vim-plug and run PlugInstall if vim-plug not found
-let g:maplocalleader="<Space>"
+" let g:mapleader=","
+" let g:maplocalleader="<Space>"
+" Map space and \ as leader keys
 
 function InstallPlug()
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -54,7 +56,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
-Plug 'pbrisbin/vim-mkdir'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
@@ -69,12 +70,12 @@ Plug 'vim-scripts/nginx.vim'
 Plug 'vim-scripts/AutoClose'
 Plug 'vim-syntastic/syntastic'
 Plug 'wakatime/vim-wakatime'
-Plug 'scrooloose/nerdtree'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'mileszs/ack.vim'
+" Plug 'scrooloose/nerdtree'
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ms-jpq/chadtree', { 'branch': 'chad', 'do': ':UpdateRemotePlugins' }
 Plug 'jlanzarotta/bufexplorer'
 Plug 'junegunn/vim-easy-align'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jremmen/vim-ripgrep'
 Plug 'leafgarland/typescript-vim'
 Plug 'chrisbra/NrrwRgn'
@@ -99,7 +100,9 @@ let g:coc_global_extensions = [
   \ 'coc-tslint',
   \ 'coc-eslint',
   \ 'coc-emmet',
+  \ 'coc-eslint',
   \ 'coc-ultisnips',
+  \ 'coc-vetur',
   \ ]
 
 
@@ -170,6 +173,10 @@ set splitright
 " Enable spell check
 set spell
 
+" Save
+inoremap <C-s> <esc>:w<cr>
+nnoremap <C-s> :w<cr>
+
 " Showing syntax highlight group in statusline
 function! SyntaxItem()
   return synIDattr(synID(line("."),col("."),1),"name")
@@ -224,7 +231,7 @@ set pastetoggle=<F3>
 
 " Powerline Configuration
 set guifont=DroidSansMono\ Nerd\ Font:h11
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 
 set encoding=utf-8
 set t_Co=256
