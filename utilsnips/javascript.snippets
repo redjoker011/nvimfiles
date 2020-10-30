@@ -1,0 +1,63 @@
+snippet jscdoc "Js Doc Tag for classes" b
+/**
+ * ${1:description}
+ * @author Peter John Alvarado <peterjohn@gorated.ph>
+ * @since Version {${2:1.0.0}}
+ */
+endsnippet
+
+snippet fndoc "Js Doc Tag function w/out parameter" b
+/**
+ * ${1:description}
+ * @author Peter John Alvarado <peterjohn@gorated.ph>
+ * @since Version {${2:1.0.0}}
+ *
+ * @return {${3:void}}
+ */
+endsnippet
+
+snippet fnpdoc "Js Doc Tag function w/ parameter" b
+/**
+ * ${1:description}
+ * @author Peter John Alvarado <peterjohn@gorated.ph>
+ * @since Version {${2:1.0.0}}
+ *
+ * @param {${3:string}} ${4:string argument}
+ *
+ * @return {${5:void}} ${6:no return value}
+ */
+endsnippet
+
+# Extens Vim Snippets for JS
+# https://github.com/honza/vim-snippets/blob/master/UltiSnips/javascript.snippets
+
+snippet re "require"
+require('$1')$0
+endsnippet
+
+snippet ed "export default" b
+export default $0
+endsnippet
+
+snippet ex "export" b
+export $0
+endsnippet
+
+snippet x[ "export { ... }" b
+export { $0 }
+endsnippet
+
+snippet fn "function () {}" b
+function ${1:name}() { $0
+}
+endsnippet
+
+snippet re "return" b
+return $0
+endsnippet
+
+snippet r[ "return (...)" b
+return (
+	$0
+)
+endsnippet

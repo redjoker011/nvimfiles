@@ -10,9 +10,7 @@
     "json",
     "graphql",
     "vue",
-    ".vue",
-    "ruby",
-    "ts"
+    "ruby"
   ],
   "prettier.requireConfig": true,
   "prettier.disableLanguages": [],
@@ -66,7 +64,7 @@
   "solargraph.diagnostics": true,
   "solargraph.hover": true,
 
-  "snippets.userSnippetsDirectory": "~/.config/coc/ultisnips",
+  "snippets.userSnippetsDirectory": "~/.config/nvim/ultisnips",
 
   "css.validate": false,
   "tsserver.trace.server": "verbose"
