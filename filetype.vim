@@ -103,6 +103,7 @@ augroup filetypedetect
         \ crontab
         \,crontab.*
         \,cron.d/*
+        \ setfiletype crontab
   " CSS files
   autocmd BufNewFile,BufRead
         \ ?*.css
@@ -374,6 +375,7 @@ augroup filetypedetect
         \,xinitrc
         \ let b:is_posix = 1
         \|setfiletype sh
+
   " SQL
   autocmd BufNewFile,BufRead
         \ ?*.sql
