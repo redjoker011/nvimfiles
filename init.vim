@@ -13,9 +13,8 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Automatically install vim-plug and run PlugInstall if vim-plug not found
-" let g:mapleader=","
-" let g:maplocalleader="<Space>"
-" Map space and \ as leader keys
+let g:mapleader=","
+let g:maplocalleader="<Space>"
 
 function InstallPlug()
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -67,7 +66,6 @@ Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/nginx.vim'
-Plug 'vim-scripts/AutoClose'
 Plug 'vim-syntastic/syntastic'
 Plug 'wakatime/vim-wakatime'
 " Plug 'scrooloose/nerdtree'
@@ -109,6 +107,7 @@ let g:coc_global_extensions = [
 Plug 'takac/vim-hardtime'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'jiangmiao/auto-pairs'
 
 " Initialize plugin system
 call plug#end()
