@@ -55,7 +55,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
-Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
@@ -68,10 +67,11 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/nginx.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'wakatime/vim-wakatime'
-" Plug 'scrooloose/nerdtree'
-" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ms-jpq/chadtree', { 'branch': 'chad', 'do': ':UpdateRemotePlugins' }
+
+" Tree Explorer with icon highlight
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
+
 Plug 'jlanzarotta/bufexplorer'
 Plug 'junegunn/vim-easy-align'
 Plug 'jremmen/vim-ripgrep'
@@ -240,9 +240,6 @@ set termencoding=utf-8
 
 " Clear Search Highlight
 nnoremap <Leader><space> :nohlsearch<Enter>
-
-" Disable Netrw since We already use ChadTree
-let loaded_netrwPlugin = 1
 
 " Lets make editing vim config easy as pie
 
