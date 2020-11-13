@@ -332,6 +332,10 @@ augroup filetypedetect
   autocmd BufNewFile,BufRead
         \ ?*.rb
         \ setfiletype ruby
+  " Haml
+  autocmd BufNewFile,BufRead
+        \ ?*.haml
+        \ setfiletype ruby
   " sed files
   autocmd BufNewFile,BufRead
         \ ?*.sed

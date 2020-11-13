@@ -13,6 +13,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Automatically install vim-plug and run PlugInstall if vim-plug not found
+let g:mapleader=","
 let g:maplocalleader="<Space>"
 
 function InstallPlug()
@@ -38,7 +39,7 @@ end
 call plug#begin('~/.vim/bundle')
 
 Plug 'airblade/vim-gitgutter'
-Plug 'itchyny/lightline.vim'
+Plug 'hardcoreplayers/spaceline.vim'
 Plug 'gregsexton/MatchTag'
 Plug 'morhetz/gruvbox'
 Plug 'lilydjwg/colorizer'
@@ -54,8 +55,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
-Plug 'pbrisbin/vim-mkdir'
-Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
@@ -66,15 +65,15 @@ Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/nginx.vim'
-Plug 'vim-scripts/AutoClose'
 Plug 'vim-syntastic/syntastic'
 Plug 'wakatime/vim-wakatime'
-Plug 'scrooloose/nerdtree'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'mileszs/ack.vim'
+
+" Tree Explorer with icon highlight
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
+
 Plug 'jlanzarotta/bufexplorer'
 Plug 'junegunn/vim-easy-align'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jremmen/vim-ripgrep'
 Plug 'leafgarland/typescript-vim'
 Plug 'chrisbra/NrrwRgn'
@@ -99,13 +98,16 @@ let g:coc_global_extensions = [
   \ 'coc-tslint',
   \ 'coc-eslint',
   \ 'coc-emmet',
+  \ 'coc-eslint',
   \ 'coc-ultisnips',
+  \ 'coc-vetur',
   \ ]
 
 
 Plug 'takac/vim-hardtime'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'jiangmiao/auto-pairs'
 
 " Initialize plugin system
 call plug#end()
@@ -170,6 +172,10 @@ set splitright
 " Enable spell check
 set spell
 
+" Save
+inoremap <C-s> <esc>:w<cr>
+nnoremap <C-s> :w<cr>
+
 " Showing syntax highlight group in statusline
 function! SyntaxItem()
   return synIDattr(synID(line("."),col("."),1),"name")
@@ -224,7 +230,7 @@ set pastetoggle=<F3>
 
 " Powerline Configuration
 set guifont=DroidSansMono\ Nerd\ Font:h11
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 
 set encoding=utf-8
 set t_Co=256
@@ -233,4 +239,12 @@ set fillchars+=stl:\ ,stlnc:\
 set termencoding=utf-8
 
 " Clear Search Highlight
-nnoremap <Leader><space> :noh<Enter>
+nnoremap <Leader><space> :nohlsearch<Enter>
+
+" Lets make editing vim config easy as pie
+
+" Open Vim Config
+nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
+
+" Source Vim Config
+nnoremap <Leader>sv :source $MYVIMRC<cr>
