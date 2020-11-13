@@ -239,7 +239,15 @@ set fillchars+=stl:\ ,stlnc:\
 set termencoding=utf-8
 
 " Clear Search Highlight
-nnoremap <Leader><space> :noh<Enter>
+nnoremap <Leader><space> :nohlsearch<Enter>
 
 " Disable Netrw since We already use ChadTree
 let loaded_netrwPlugin = 1
+
+" Lets make editing vim config easy as pie
+
+" Open Vim Config
+nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
+
+" Source Vim Config
+nnoremap <Leader>sv :source $MYVIMRC<cr>
