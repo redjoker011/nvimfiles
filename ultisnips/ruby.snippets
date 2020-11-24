@@ -30,3 +30,24 @@ endsnippet
 snippet pry "binding.pry" b
 require 'pry';binding.pry
 endsnippet
+
+snippet doc "Ruby Class, Module Tag" b
+# ${1:description}
+# @author Peter John Alvarado <redjoker011@gmail.com>
+endsnippet
+
+snippet mdoc "Ruby Method Tag" b
+# ${1:description}
+# @author Peter John Alvarado <redjoker011@gmail.com>
+#
+# @return [${3:Void}] ${4:no return value}
+endsnippet
+
+snippet mpdoc "Ruby Method with Parameter Tag" b
+# ${1:description}
+# @author Peter John Alvarado <redjoker011@gmail.com>
+#
+# @param [${3:String}] ${4:string argument}
+#
+# @return [${5:Void}] ${6:no return value}
+endsnippet
