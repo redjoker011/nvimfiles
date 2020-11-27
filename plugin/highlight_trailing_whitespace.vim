@@ -1,3 +1,7 @@
+" see https://vim.fandom.com/wiki/Highlight_unwanted_spaces
+" see help magic
+" see help pattern-overview
+" see help :match
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 
 augroup WhitespaceMatch
