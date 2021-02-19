@@ -247,4 +247,4 @@ nnoremap <Leader><space> :nohlsearch<Enter>
 nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
 
 " Source Vim Config
-nnoremap <Leader>sv :source $MYVIMRC<cr>
+nnoremap <Leader>sv :source %<cr>

@@ -17,6 +17,7 @@ let g:startify_session_persistence    = 1
 let g:startify_update_oldfiles        = 1
 let g:startify_use_env                = 1
 let g:startify_lists = [
+          \ { 'type': 'files',     'header': ['   Files '] },
           \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
           \ { 'type': 'sessions',  'header': ['   Saved Sessions']       },
           \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
