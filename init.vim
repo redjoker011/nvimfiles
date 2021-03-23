@@ -16,6 +16,9 @@
 let g:mapleader=","
 let g:maplocalleader="<Space>"
 
+" Set modifiable
+:set ma
+
 function InstallPlug()
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -39,7 +42,7 @@ end
 call plug#begin('~/.vim/bundle')
 
 Plug 'airblade/vim-gitgutter'
-Plug 'hardcoreplayers/spaceline.vim'
+" Plug 'hardcoreplayers/spaceline.vim'
 Plug 'gregsexton/MatchTag'
 Plug 'morhetz/gruvbox'
 Plug 'lilydjwg/colorizer'
