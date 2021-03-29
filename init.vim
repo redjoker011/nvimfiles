@@ -42,7 +42,7 @@ end
 call plug#begin('~/.vim/bundle')
 
 Plug 'airblade/vim-gitgutter'
-" Plug 'hardcoreplayers/spaceline.vim'
+Plug 'hardcoreplayers/spaceline.vim'
 Plug 'gregsexton/MatchTag'
 Plug 'morhetz/gruvbox'
 Plug 'lilydjwg/colorizer'
