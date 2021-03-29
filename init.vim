@@ -16,6 +16,9 @@
 let g:mapleader=","
 let g:maplocalleader="<Space>"
 
+" Set modifiable
+:set ma
+
 function InstallPlug()
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -247,4 +250,4 @@ nnoremap <Leader><space> :nohlsearch<Enter>
 nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
 
 " Source Vim Config
-nnoremap <Leader>sv :source $MYVIMRC<cr>
+nnoremap <Leader>sv :source %<cr>
