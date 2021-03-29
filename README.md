@@ -30,6 +30,12 @@ brew install fzf
 
 [fzf installation](https://github.com/junegunn/fzf#installation)
 
+**Vim Plug**
+
+Download plug.vim and put it in the "autoload" directory.
+
+[vim plug installation](https://github.com/junegunn/vim-plug#installation)
+
 # Installation
 
 **Clone Repository and set as default nvim config**
