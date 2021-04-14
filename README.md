@@ -30,6 +30,14 @@ brew install fzf
 
 [fzf installation](https://github.com/junegunn/fzf#installation)
 
+**RIP Grep
+
+```
+brew install ripgrep
+```
+
+[ripgrep installation](https://github.com/BurntSushi/ripgrep#installation)
+
 **Vim Plug**
 
 Download plug.vim and put it in the "autoload" directory.
