@@ -254,4 +254,5 @@ nnoremap <Leader>sv :source %<cr>
 
 " Load NVIM Tree
 " https://github.com/kyazdani42/nvim-tree.lua/issues/767#issuecomment-962637481
-lua require'nvim-tree'.setup { view = { side = "right" } }
+" Set window picker to false to avoid issues
+lua require'nvim-tree'.setup { view = { side = "right" }, actions = { open_file = { window_picker = { enable = false } } } }
