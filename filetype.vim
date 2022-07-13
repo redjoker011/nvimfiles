@@ -1,8 +1,8 @@
-" Override system filetype.vim
-if exists('g:did_load_filetypes')
+" Only Override File Type when not detected
+if exists("did_load_filetypes_userafter")
   finish
 endif
-let g:did_load_filetypes = 1
+let did_load_filetypes_userafter = 1
 
 " If we don't have +autocmd or are 'compatible', do nothing, and don't try
 " again later
@@ -91,6 +91,15 @@ augroup filetypedetect
         \ ?*.c
         \,?*.h
         \ setfiletype c
+  " C# Files
+  autocmd BufNewFile,BufRead
+        \ ?*.cs
+        \,?*.csproj
+        \ setfiletype cs
+  "CS HTML files
+  autocmd BufNewFile,BufRead
+        \ ?*.cshtml
+        \ setfiletype cshtml
   " C++ files
   autocmd BufNewFile,BufRead
         \ ?*.cpp
@@ -173,11 +182,6 @@ augroup filetypedetect
         \,/etc/gshadow-
         \,/etc/gshadow.edit
         \ setfiletype group
-  " GTK settings files
-  autocmd BufNewFile,BufRead
-        \ .gktrc*,
-        \,gktrc*
-        \ setfiletype gtkrc
   " Vim help files
   autocmd BufNewFile,BufRead
         \ ~/.vim/doc/?*.txt
@@ -318,6 +322,11 @@ augroup filetypedetect
         \ .inputrc
         \,inputrc
         \ setfiletype readline
+  " Razor files
+  autocmd BufNewFile,BufRead
+        \ ?*.razor
+        \ *.razor
+        \ setfiletype razor
   " Remind files
   autocmd BufNewFile,BufRead
         \ .reminders
@@ -431,9 +440,14 @@ augroup filetypedetect
   autocmd BufNewFile,BufRead
         \ ?*.tsv
         \ setfiletype tsv
+  " Vim files
+  autocmd BufNewFile,BufRead
+        \ *.vim
+        \ setfiletype vim
   " VimL files
   autocmd BufNewFile,BufRead
         \ ?*.vim
+        \ *.vim
         \,*.exrc
         \,*.gvimrc
         \,*.vimrc
