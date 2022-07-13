@@ -59,7 +59,8 @@
   "diagnostic.infoSign": "▪",
   "diagnostic.hintSign": "⋅",
 
-  "solargraph.autoformat": true,
+  "solargraph.commandPath": "/Users/pete_jdv/.rbenv/shims/solargraph",
+  "solargraph.autoformat": false,
   "solargraph.formatting": true,
   "solargraph.diagnostics": true,
   "solargraph.hover": true,
