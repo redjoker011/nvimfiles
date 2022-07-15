@@ -68,5 +68,6 @@
   "snippets.userSnippetsDirectory": "~/.config/nvim/ultisnips",
 
   "css.validate": false,
-  "tsserver.trace.server": "verbose"
+  "tsserver.trace.server": "verbose",
+  "diagnostic.displayByAle": true
 }
