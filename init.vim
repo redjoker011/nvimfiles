@@ -68,7 +68,6 @@ Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/nginx.vim'
-Plug 'vim-syntastic/syntastic'
 Plug 'wakatime/vim-wakatime'
 
 " Tree Explorer with icon highlight
@@ -87,6 +86,9 @@ Plug 'tpope/vim-eunuch'
 " Snippets compatible with coc-snippets
 " https://github.com/honza/vim-snippets
 Plug 'honza/vim-snippets'
+
+Plug 'dense-analysis/ale'
+" Plug 'vim-syntastic/syntastic'
 
 " Coc All da wae
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
