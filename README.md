@@ -46,14 +46,6 @@ brew install --cask dotnet
 
 https://dotnet.microsoft.com/en-us/download/dotnet
 
-**Csharp-LS**
-
-Csharp Language Server for Coc-Nvim
-
-```
-dotnet tool install --global csharp-ls
-```
-
 **Rbenv**
 
 ```ruby
@@ -101,6 +93,21 @@ brew install font-haskplex-nerd
 
 select `Text` menu and select `Haskplex Nerd` font as preferred font
 
+# Language Server and Completion
+
+We are utilizing [Ale](https://github.com/dense-analysis/ale) and [Coc Nvim](https://github.com/neoclide/coc.nvim) for language server, completion, syntax
+linting and fixing. The information below displays the plugin and language
+servers that runs on them
+
+- Coc
+  - Solargraph
+  - TsServer
+  - Vetur(Vuejs)
+
+- ALE
+  - Omnisharp-vim
+
+https://github.com/dense-analysis/ale#faq-coc-nvim
 
 # Inspiration
 [Vimways 2018 Attack of the 5,000-line vimrc](https://vimways.org/2018/from-vimrc-to-vim)
