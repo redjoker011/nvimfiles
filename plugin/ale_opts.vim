@@ -1,3 +1,5 @@
+" Disable ale lsp to work with coc nvim
+" https://github.com/dense-analysis/ale#5iii-how-can-i-use-ale-and-cocnvim-together
 let g:ale_disable_lsp = 1
 
 " Fix files on save
