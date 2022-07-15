@@ -68,12 +68,5 @@
   "snippets.userSnippetsDirectory": "~/.config/nvim/ultisnips",
 
   "css.validate": false,
-  "tsserver.trace.server": "verbose",
-  "languageserver": {
-      "csharp-ls": {
-        "command": "/$HOME/.dotnet/tools/csharp-ls",
-        "filetypes": ["cs"],
-        "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
-      }
-  }
+  "tsserver.trace.server": "verbose"
 }
