@@ -1,3 +1,5 @@
+version: v1.0.0
+
 # nvimfiles
 Neo Vim Evolving Configurations
 
