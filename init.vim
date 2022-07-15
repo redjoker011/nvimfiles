@@ -107,10 +107,13 @@ let g:coc_global_extensions = [
   \ ]
 
 
+" Experimental Tools
 Plug 'takac/vim-hardtime'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'jiangmiao/auto-pairs'
+Plug 'sheerun/vim-polyglot'
+Plug 'OmniSharp/omnisharp-vim'
 
 " Initialize plugin system
 call plug#end()
