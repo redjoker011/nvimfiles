@@ -38,6 +38,36 @@ brew install ripgrep
 
 [ripgrep installation](https://github.com/BurntSushi/ripgrep#installation)
 
+**.Net 6**
+
+```
+brew install --cask dotnet
+```
+
+https://dotnet.microsoft.com/en-us/download/dotnet
+
+**Csharp-LS**
+
+Csharp Language Server for Coc-Nvim
+
+```
+dotnet tool install --global csharp-ls
+```
+
+**Rbenv**
+
+```ruby
+brew install rbenv ruby-build
+
+# Install your preferred ruby version
+```
+
+**Solargraph**
+
+```
+gem install solargraph
+```
+
 **Vim Plug**
 
 Download plug.vim and put it in the "autoload" directory.

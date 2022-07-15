@@ -59,7 +59,7 @@
   "diagnostic.infoSign": "▪",
   "diagnostic.hintSign": "⋅",
 
-  "solargraph.commandPath": "/Users/pete_jdv/.rbenv/shims/solargraph",
+  "solargraph.commandPath": "/$HOME/.rbenv/shims/solargraph",
   "solargraph.autoformat": false,
   "solargraph.formatting": true,
   "solargraph.diagnostics": true,
@@ -68,5 +68,12 @@
   "snippets.userSnippetsDirectory": "~/.config/nvim/ultisnips",
 
   "css.validate": false,
-  "tsserver.trace.server": "verbose"
+  "tsserver.trace.server": "verbose",
+  "languageserver": {
+      "csharp-ls": {
+        "command": "/$HOME/.dotnet/tools/csharp-ls",
+        "filetypes": ["cs"],
+        "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
+      }
+  }
 }
